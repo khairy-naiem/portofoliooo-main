@@ -37,6 +37,14 @@ const projects: Project[] = [
     liveUrl: "https://bobos-one.vercel.app/",
     tags: ["React", "TypeScript", "Redux", "Tailwind CSS"],
   },
+  {
+    title: "Coffee Shop e-commerce project",
+    description: "A responsive e-commerce platform for a coffee shop developed with JavaScript, HTML5, CSS3, Bootstrap, and jQuery to deliver a smooth and engaging shopping experience. The application includes product listings, detailed product pages, and responsive layouts. jQuery was used to handle dynamic content and interactions, while Bootstrap was used to create a responsive and mobile-first UI with consistent styling.",
+    image: "/coffe.png",
+    codeUrl: "https://github.com/toka09/E-commerce-project1.git",
+    liveUrl: "https://e-commerce-rq94.vercel.app/",
+    tags: ["JavaScript", "HTML5", "CSS3", "Bootstrap", "jQuery"],
+  },
 ];
 
 const ProjectsSection = () => {
@@ -51,13 +59,12 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="relative grid grid-cols-12 items-center gap-6 overflow-hidden"
+              className="relative grid grid-cols-12 items-center gap-8"
             >
               {/* Image Section */}
               <div
-                className={`col-span-12 md:col-span-7 relative ${
-                  index % 2 === 0 ? "md:col-start-1" : "md:col-start-6"
-                }`}
+                className={`col-span-12 md:col-span-7 relative ${index % 2 === 0 ? "md:col-start-1" : "md:col-start-6"
+                  }`}
               >
                 <a
                   href={project.liveUrl}
@@ -76,11 +83,10 @@ const ProjectsSection = () => {
 
               {/* Content Section */}
               <div
-                className={`col-span-12 md:col-span-5 relative z-20 pointer-events-none md:row-start-1 ${
-                  index % 2 === 0
+                className={`col-span-12 md:col-span-5 relative z-20 pointer-events-none md:row-start-1 ${index % 2 === 0
                     ? "md:col-start-8 md:text-right"
                     : "md:col-start-1 md:text-left"
-                }`}
+                  }`}
               >
                 <div
                   className={`
@@ -112,11 +118,10 @@ const ProjectsSection = () => {
                   </div>
 
                   <ul
-                    className={`flex flex-wrap gap-4 text-xs font-mono text-muted-foreground mb-8 ${
-                      index % 2 === 0
+                    className={`flex flex-wrap gap-4 text-xs font-mono text-muted-foreground mb-8 ${index % 2 === 0
                         ? "md:justify-end"
                         : "md:justify-start"
-                    }`}
+                      }`}
                   >
                     {project.tags.map((tag) => (
                       <li
@@ -129,11 +134,10 @@ const ProjectsSection = () => {
                   </ul>
 
                   <div
-                    className={`flex items-center gap-6 pointer-events-auto ${
-                      index % 2 === 0
+                    className={`flex items-center gap-6 pointer-events-auto ${index % 2 === 0
                         ? "lg:justify-end"
                         : "lg:justify-start"
-                    }`}
+                      }`}
                   >
                     <a
                       href={project.codeUrl}
