@@ -49,7 +49,7 @@ const projects: Project[] = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24 relative overflow-hidden">
+    <section id="projects" className=" relative overflow-hidden">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-20 text-center">
           Some Things I've Built
@@ -72,11 +72,11 @@ const ProjectsSection = () => {
                   rel="noopener noreferrer"
                   className="block w-full h-full rounded bg-muted/20 relative group overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-primary/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-300 z-10 rounded" />
+                  <div className="absolute  transition-all duration-300 z-10 rounded" />
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-auto md:h-full object-cover rounded shadow-lg filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                    className="w-full h-auto md:h-full object-cover rounded shadow-lg hover:scale-105  transition-all duration-300"
                   />
                 </a>
               </div>
@@ -164,12 +164,12 @@ const ProjectsSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-24">
+        <div className="text-center mt-24 ">
           <a
             href="https://github.com/khairy-naiem"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border border-primary text-primary rounded hover:bg-primary/10 transition-colors font-mono text-sm"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border  border-primary text-primary rounded-full hover:bg-primary/10 transition-colors font-mono text-sm"
           >
             View Full Project Archive
           </a>

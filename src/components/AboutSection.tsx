@@ -2,7 +2,7 @@ const traits = ["Fast Learner", "Problem Solver", "Team Friendly"];
 
 const AboutSection = () => {
   return (
-    <section className="py-20 relative">
+    <section className="relative">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-foreground mb-8 text-center">

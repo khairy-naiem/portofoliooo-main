@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const roles = ["Front-End Developer", "React Developer", "UI/UX Enthusiast"];
+const roles = ["Front-End & cross Platform Developer", "React Developer","React native Developer", "UI/UX Enthusiast"];
 
 const HeroSection = () => {
   const [currentRole, setCurrentRole] = useState(0);

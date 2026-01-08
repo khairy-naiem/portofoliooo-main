@@ -6,74 +6,74 @@
 
 @layer base {
   :root {
-    --background: 220 20% 7%;
-    --foreground: 0 0% 98%;
+    --background: 260 25% 11%;
+    --foreground: 260 10% 90%;
 
-    --card: 220 18% 10%;
-    --card-foreground: 0 0% 98%;
+    --card: 260 25% 15%;
+    --card-foreground: 260 10% 90%;
 
-    --popover: 220 18% 10%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 260 25% 15%;
+    --popover-foreground: 260 10% 90%;
 
-    --primary: 145 100% 50%;
-    --primary-foreground: 220 20% 7%;
+    --primary: 265 89% 78%;
+    --primary-foreground: 260 30% 15%;
 
-    --secondary: 220 18% 14%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 260 20% 20%;
+    --secondary-foreground: 260 10% 90%;
 
-    --muted: 220 15% 20%;
-    --muted-foreground: 220 10% 60%;
+    --muted: 260 20% 20%;
+    --muted-foreground: 260 10% 60%;
 
-    --accent: 300 100% 65%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 290 70% 70%;
+    --accent-foreground: 260 10% 90%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 145 100% 50%;
+    --border: 260 20% 20%;
+    --input: 260 20% 20%;
+    --ring: 265 89% 78%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 220 18% 10%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 145 100% 50%;
-    --sidebar-primary-foreground: 220 20% 7%;
-    --sidebar-accent: 220 18% 14%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 220 15% 20%;
-    --sidebar-ring: 145 100% 50%;
+    --sidebar-background: 260 25% 11%;
+    --sidebar-foreground: 260 10% 90%;
+    --sidebar-primary: 265 89% 78%;
+    --sidebar-primary-foreground: 260 30% 15%;
+    --sidebar-accent: 260 20% 20%;
+    --sidebar-accent-foreground: 260 10% 90%;
+    --sidebar-border: 260 20% 20%;
+    --sidebar-ring: 265 89% 78%;
   }
 
   .dark {
-    --background: 220 20% 7%;
-    --foreground: 0 0% 98%;
-    --card: 220 18% 10%;
-    --card-foreground: 0 0% 98%;
-    --popover: 220 18% 10%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 145 100% 50%;
-    --primary-foreground: 220 20% 7%;
-    --secondary: 220 18% 14%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 220 15% 20%;
-    --muted-foreground: 220 10% 60%;
-    --accent: 300 100% 65%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 145 100% 50%;
-    --sidebar-background: 220 18% 10%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 145 100% 50%;
-    --sidebar-primary-foreground: 220 20% 7%;
-    --sidebar-accent: 220 18% 14%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 220 15% 20%;
-    --sidebar-ring: 145 100% 50%;
+    --background: 260 25% 11%;
+    --foreground: 260 10% 90%;
+    --card: 260 25% 15%;
+    --card-foreground: 260 10% 90%;
+    --popover: 260 25% 15%;
+    --popover-foreground: 260 10% 90%;
+    --primary: 265 89% 78%;
+    --primary-foreground: 260 30% 15%;
+    --secondary: 260 20% 20%;
+    --secondary-foreground: 260 10% 90%;
+    --muted: 260 20% 20%;
+    --muted-foreground: 260 10% 60%;
+    --accent: 290 70% 70%;
+    --accent-foreground: 260 10% 90%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 260 20% 20%;
+    --input: 260 20% 20%;
+    --ring: 265 89% 78%;
+    --sidebar-background: 260 25% 11%;
+    --sidebar-foreground: 260 10% 90%;
+    --sidebar-primary: 265 89% 78%;
+    --sidebar-primary-foreground: 260 30% 15%;
+    --sidebar-accent: 260 20% 20%;
+    --sidebar-accent-foreground: 260 10% 90%;
+    --sidebar-border: 260 20% 20%;
+    --sidebar-ring: 265 89% 78%;
   }
 }
 
@@ -98,11 +98,11 @@
   }
 
   .glow {
-    box-shadow: 0 0 20px hsl(145 100% 50% / 0.3);
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
   }
 
   .glow-text {
-    text-shadow: 0 0 20px hsl(145 100% 50% / 0.5);
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.5);
   }
 
   .animate-fade-in {
